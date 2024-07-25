@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+<main class="w-full h-screen overflow-hidden bg-bgColor flex justify-center items-center font-Roboto">
+    <div class="todos-container bg-green-200 w-[35%] h-[90%] rounded-3xl p-10 flex flex-col justify-between items-center">
+        <div class="heading bg-green-100 w-full h-[100px] rounded-2xl flex justify-center items-center">
+            <form class="todoForm w-full h-full flex justify-between items-center p-8">
+                <input type="text" placeholder="Title" class="titleInput h-[60px] p-2 bg-transparent focus:outline-none text-green-300 placeholder:text-green-300" name="title" />
+                <input type="submit" class="border border-green-300 p-4 rounded-lg text-green-300 hover:bg-green-300 hover:text-white transition-all 0.2s" />
+            </form>
+        </div>
+        <div class="todos bg-bgColor w-full h-[430px] rounded-2xl p-5 overflow-y-auto overflow-x-hidden"></div>
+    </div>
+</main>
+<script src="../js/app.js"></script>
+</body>
+</html>
